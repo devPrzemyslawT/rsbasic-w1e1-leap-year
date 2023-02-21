@@ -1,15 +1,19 @@
 import "./App.css";
-import "./LeapYearApp/Form/Paragraph/SimpleParagraph";
+import { useState } from "react";
+
 import SimpleParagraph from "./LeapYearApp/Form/Paragraph/SimpleParagraph";
 import SimpleButton from "./LeapYearApp/Form/Button/SimpleButton";
 import SimpleInNumber from "./LeapYearApp/Form/InputNumber/SimpleInNumber";
-import { useState } from "react";
+
+import { LeapYearCalculation } from "./UtilsFun/UserFunction";
+
 function App() {
 	const handleOnClick = event => {
 		if (inputYear <= 0) {
 			console.log("Set value >0 ");
 		} else {
-			if (inputYear % 4 === 0) {
+			const yearResult = LeapYearCalculation(inputYear);
+			if (yearResult === 0) {
 				console.log("Leap year");
 			} else {
 				console.log("Not leap year");
