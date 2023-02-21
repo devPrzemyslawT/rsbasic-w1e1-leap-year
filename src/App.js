@@ -8,10 +8,10 @@ import SimpleInNumber from "./LeapYearApp/Form/InputNumber/SimpleInNumber";
 import { LeapYearCalculation } from "./UtilsFun/UserFunction";
 
 function App() {
-  
 	const handleOnClick = event => {
 		setCalcYear(LeapYearCalculation(inputYear));
 	};
+
 	const handleChange = event => {
 		setInputYear(event.target.value);
 	};
@@ -34,8 +34,7 @@ function App() {
 					onChangeValue={handleChange}
 				/>
 				<SimpleButton buttonLabel={"CALCULATE"} handleOnClick={handleOnClick} />
-				<SimpleParagraph label={"Result:"} />
-				<SimpleParagraph label={calcYear} />
+				<SimpleParagraph label={`Result: ${calcYear}`} />
 			</div>
 		</div>
 	);
