@@ -1,8 +1,16 @@
 .button {
-	/* padding: 10px; */
-	height: 50px;
-	width: 80%;
+	height: 36px;
+	width: 310px;
+	font-size: 22px;
 	background-color: black;
-	border: 1px solid gold;
-	color: gold;
+	border: 1px solid #f5cb5c;
+	color: #f5cb5c;
+	border-radius: 8px;
+	transition: 1s;
+}
+
+.button:hover {
+	background-color: #f5cb5c;
+	border: 1px solid #ddd;
+	color: black;
 }
