@@ -1,4 +1,8 @@
 .App {
-  text-align: center;
+	width: 400px;
+	height: 400px;
+	background-color: black;
+	border: 2px solid gold;
+	border-top-left-radius: 8px;
+	border-top-right-radius: 8px;
 }
-
